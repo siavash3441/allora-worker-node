@@ -111,9 +111,72 @@ cat <<EOF > config.json
       }
     },
     {
-      "topicId": 1,
+    "topicId": 2,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 3,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 3,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 4,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 4,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 5,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 6,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 5,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 7,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 4,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 8,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 3,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+        "topicId": 9,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 1,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "ETH"
+            }
+        },
+        {
+      "topicId": 10,
       "inferenceEntrypointName": "api-worker-reputer",
-      "loopSeconds": 3,
+      "loopSeconds": 2,
       "parameters": {
         "InferenceEndpoint": "http://localhost:8000/inference/{Token}",
         "Token": "ETH"
