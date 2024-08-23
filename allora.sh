@@ -138,7 +138,7 @@ cat <<EOF > config.json
             }
         },
         {
-        "topicId": 6,
+        "topicId": 5,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 5,
             "parameters": {
@@ -147,7 +147,7 @@ cat <<EOF > config.json
             }
         },
         {
-        "topicId": 7,
+        "topicId": 6,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 4,
             "parameters": {
@@ -156,7 +156,7 @@ cat <<EOF > config.json
             }
         },
         {
-        "topicId": 8,
+        "topicId": 7,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 3,
             "parameters": {
@@ -165,7 +165,7 @@ cat <<EOF > config.json
             }
         },
         {
-        "topicId": 9,
+        "topicId": 8,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 1,
             "parameters": {
@@ -174,7 +174,7 @@ cat <<EOF > config.json
             }
         },
         {
-      "topicId": 10,
+      "topicId": 9,
       "inferenceEntrypointName": "api-worker-reputer",
       "loopSeconds": 2,
       "parameters": {
