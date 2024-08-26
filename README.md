@@ -34,3 +34,21 @@ wget https://raw.githubusercontent.com/siavash3441/allora-worker-node/main/allor
 
 
 - It means your node is running
+
+## update
+If it is not updated, change the following file
+
+```bash
+docker rm $(docker ps -a -q) --force
+docker rmi $(docker images -a -q) --force
+```
+
+```bash
+nano model.py
+```
+
+Change intervals to
+
+```bash
+intervals = ["10m", "20m", "1h", "1d"]
+```
