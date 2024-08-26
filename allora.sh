@@ -89,100 +89,46 @@ echo
 echo -e "${BOLD}${UNDERLINE}${DARK_YELLOW}Generating config.json file...${RESET}"
 cat <<EOF > config.json
 {
-  "wallet": {
-    "addressKeyName": "test",
-    "addressRestoreMnemonic": "$WALLET_SEED_PHRASE",
-    "alloraHomeDir": "",
-    "gas": "1000000",
-    "gasAdjustment": 1.0,
-    "nodeRpc": "https://allora-rpc.testnet-1.testnet.allora.network/",
-    "maxRetries": 1,
-    "delay": 1,
-    "submitTx": true
-  },
-  "worker": [
-    {
-      "topicId": 1,
-      "inferenceEntrypointName": "api-worker-reputer",
-      "loopSeconds": 2,
-      "parameters": {
-        "InferenceEndpoint": "http://localhost:8000/inference/{Token}",
-        "Token": "ETH"
-      }
+    "wallet": {
+        "addressKeyName": "testkey",
+        "addressRestoreMnemonic": "Seed Phrase",
+        "alloraHomeDir": "",
+        "gas": "1000000",
+        "gasAdjustment": 1.0,
+        "nodeRpc": "https://allora-rpc.testnet-1.testnet.allora.network/",
+        "maxRetries": 1,
+        "delay": 1,
+        "submitTx": false
     },
-    {
-    "topicId": 2,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 3,
-            "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
+    "worker": [
         {
-        "topicId": 3,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 4,
-            "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
-        {
-        "topicId": 4,
+            "topicId": 1,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 5,
             "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
                 "Token": "ETH"
             }
         },
         {
-        "topicId": 5,
+            "topicId": 2,
             "inferenceEntrypointName": "api-worker-reputer",
             "loopSeconds": 5,
             "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
                 "Token": "ETH"
             }
         },
         {
-        "topicId": 6,
+            "topicId": 7,
             "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 4,
+            "loopSeconds": 5,
             "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
                 "Token": "ETH"
             }
-        },
-        {
-        "topicId": 7,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 3,
-            "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
-        {
-        "topicId": 8,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 1,
-            "parameters": {
-                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
-        {
-      "topicId": 9,
-      "inferenceEntrypointName": "api-worker-reputer",
-      "loopSeconds": 2,
-      "parameters": {
-        "InferenceEndpoint": "http://localhost:8000/inference/{Token}",
-        "Token": "ETH"
-      }
-    }
-  ]
+        }
+    ]
 }
 EOF
 
